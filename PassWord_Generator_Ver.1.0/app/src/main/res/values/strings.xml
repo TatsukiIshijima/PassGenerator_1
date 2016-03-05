@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">パスワード生成機</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_exit">終了</string>
+    <string name="title_MainActivity">パスワード生成＆保存</string>
+    <string name="title_SecondActivity">パスワード検索＆一覧</string>
+
+</resources>

@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PassWord"
+        android:textSize="20dp"
+        android:textColor="#33cc00"
+        />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:text="パスワード"
+        android:layout_below="@+id/textview"
+        android:textSize="28dp"
+        android:textColor="#33cc00"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/edittext_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEMO"
+        android:textColor="#33cc00"
+        android:textSize="20dp"
+        android:layout_below="@+id/textview1"/>
+
+    <EditText
+        android:id="@+id/memo_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/edittext_view"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:inputType="text"/>
+
+    <TableLayout
+        android:id="@+id/table_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memo_text"
+        android:layout_centerHorizontal="true"
+        android:background="#dcdcdc"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="5dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/digit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="桁数: "
+                android:textSize="18dp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/digit_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog">
+            </Spinner>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table_tbutton"
+        android:layout_below="@+id/table_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TableRow>
+            <ToggleButton
+                android:id="@+id/num_tbutton"
+                android:textOn="○数字"
+                android:textOff="×数字"
+                android:textSize="18dp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"/>
+
+            <ToggleButton
+                android:id="@+id/upp_tbutton"
+                android:textOn="○英大文字"
+                android:textOff="×英大文字"
+                android:textSize="18dp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"/>
+        </TableRow>
+
+        <TableRow>
+            <ToggleButton
+                android:id="@+id/sym_tbutton"
+                android:textOn="○記号"
+                android:textOff="×記号"
+                android:textSize="18dp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"/>
+
+            <ToggleButton
+                android:id="@+id/low_tbutton"
+                android:textOn="○英小文字"
+                android:textOff="×英小文字"
+                android:textSize="18dp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/create_button"
+        android:text="パスワード作成"
+        android:textSize="18dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table_tbutton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/regist_button"
+        android:text="保存"
+        android:textSize="18dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_button"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
